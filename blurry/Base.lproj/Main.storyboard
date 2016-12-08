@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jfgg.png" translatesAutoresizingMaskIntoConstraints="NO" id="ZNg-tE-ytq">
+                                <rect key="frame" x="67" y="28" width="236" height="308"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ZNg-tE-ytq" secondAttribute="height" multiplier="5:7" constant="16" id="pQe-fy-KgC"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hsv-ft-6Xo">
+                                <rect key="frame" x="78.5" y="416" width="31" height="30"/>
+                                <state key="normal" title="模糊">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
+                                <connections>
+                                    <action selector="mohuBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="apK-kt-gKb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VkJ-Cv-o0b">
+                                <rect key="frame" x="266" y="416" width="31" height="30"/>
+                                <state key="normal" title="清楚">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="qingchuBtn:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qyr-1g-RaB"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="ZNg-tE-ytq" secondAttribute="trailing" constant="72" id="SC6-a1-SiU"/>
+                            <constraint firstItem="VkJ-Cv-o0b" firstAttribute="top" secondItem="ZNg-tE-ytq" secondAttribute="bottom" constant="80" id="Sq3-VS-bs2"/>
+                            <constraint firstItem="VkJ-Cv-o0b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="VP9-E4-Sap"/>
+                            <constraint firstItem="Hsv-ft-6Xo" firstAttribute="top" secondItem="ZNg-tE-ytq" secondAttribute="bottom" constant="80" id="XVH-8c-CdW"/>
+                            <constraint firstItem="ZNg-tE-ytq" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" id="h9J-28-hXM"/>
+                            <constraint firstItem="Hsv-ft-6Xo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="lAD-3R-2mS"/>
+                            <constraint firstItem="ZNg-tE-ytq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" constant="-2.5" id="u8e-bh-sqx"/>
+                            <constraint firstItem="ZNg-tE-ytq" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="67" id="xxo-BP-FQx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="ZNg-tE-ytq" id="Nb4-jA-MrC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="313" y="100"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="jfgg.png" width="640" height="933"/>
+    </resources>
+</document>
